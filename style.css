@@ -93,3 +93,15 @@ header p { color: var(--muted); margin-top: 8px; }
 .v2 { background: #3b3f73; } .v4 { background: #4b50a0; } .v8 { background: #6a4cff; }
 .v16 { background: #7c5cff; } .v32 { background: #a855f7; } .v64 { background: #d946ef; }
 .v128, .v256, .v512, .v1024, .v2048 { background: var(--accent2); color: var(--bg); }
+.sudoku { max-width: 400px; margin: auto; display: grid; grid-template-columns: repeat(9, 1fr); border: 3px solid var(--accent); border-radius: 8px; overflow: hidden; background: var(--card); }
+.sc { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; border: 1px solid #2c2f55; cursor: pointer; user-select: none; }
+.sc.given { font-weight: 700; background: #23264a; }
+.sc:not(.given) { color: var(--accent2); }
+.sc.bR { border-right: 2px solid var(--accent); }
+.sc.bB { border-bottom: 2px solid var(--accent); }
+.sc.same { background: #3b3f73; }
+.sc.sel { background: var(--accent); color: white; }
+.sc.bad { color: #ff6b6b !important; }
+.pad { max-width: 400px; margin: 20px auto 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.pad button { padding: 12px 0; border-radius: 10px; background: var(--card); color: var(--text); border: 1px solid #2c2f55; font: inherit; font-size: 1.1rem; cursor: pointer; }
+.pad button:hover { background: var(--accent); }

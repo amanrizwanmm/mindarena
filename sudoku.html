@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku | MindArena</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="back" href="index.html">← Back to games</a>
+    <h1>Su<span>doku</span></h1>
+  </header>
+  <div class="sudoku" id="sudoku"></div>
+  <div class="pad" id="pad"></div>
+  <button class="btn" id="newGame">New Game</button>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="trophy">🧠</div>
+      <h2>Solved!</h2>
+      <p>Great logic. You completed the puzzle.</p>
+      <button class="btn" id="playAgain">New Puzzle</button>
+      <a class="btn btn-ghost" href="index.html">Main Menu</a>
+    </div>
+  </div>
+  <script src="sudoku.js"></script>
+</body>
+</html>
