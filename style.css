@@ -88,3 +88,8 @@ header p { color: var(--muted); margin-top: 8px; }
   width: fit-content;
 }
 .btn-ghost:hover { background: var(--accent2); color: var(--bg); }
+.board2048 { max-width: 380px; margin: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; background: #14162d; padding: 10px; border-radius: 16px; touch-action: none; }
+.cell { aspect-ratio: 1; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.6rem; background: var(--card); transition: background 0.15s; }
+.v2 { background: #3b3f73; } .v4 { background: #4b50a0; } .v8 { background: #6a4cff; }
+.v16 { background: #7c5cff; } .v32 { background: #a855f7; } .v64 { background: #d946ef; }
+.v128, .v256, .v512, .v1024, .v2048 { background: var(--accent2); color: var(--bg); }
