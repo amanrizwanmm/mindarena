@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2f9c"/><stop offset="1" stop-color="#050a24"/></linearGradient>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ffbff"/><stop offset="1" stop-color="#3a4bff"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <circle cx="350" cy="30" r="100" fill="#00e5ff" opacity="0.12"/>
+  <rect x="125" y="12" width="150" height="150" rx="6" fill="#0b1240" stroke="url(#c)" stroke-width="3"/>
+  <path d="M141.67 12V162M158.33 12V162M191.67 12V162M208.33 12V162M241.67 12V162M258.33 12V162M125 28.67H275M125 45.33H275M125 78.67H275M125 95.33H275M125 128.67H275M125 145.33H275" stroke="#3a6bff" stroke-width="1" opacity="0.6"/>
+  <path d="M175 12V162M225 12V162M125 62H275M125 112H275" stroke="url(#c)" stroke-width="2.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="12" text-anchor="middle" fill="#8ffbff">
+    <text x="133.3" y="24.5">5</text><text x="200" y="24.5">3</text>
+    <text x="166.7" y="41.2">9</text><text x="233.3" y="57.9">7</text>
+    <text x="183.3" y="74.5">1</text><text x="150" y="91.2">6</text>
+    <text x="250" y="91.2">4</text><text x="216.7" y="107.9">8</text>
+    <text x="166.7" y="124.5">2</text><text x="266.7" y="141.2">5</text>
+    <text x="200" y="157.9">9</text><text x="133.3" y="157.9">3</text>
+  </g>
+</svg>

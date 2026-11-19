@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap');
 :root {
   --bg: #0f1020;
   --card: #1b1d36;
@@ -105,3 +106,146 @@ header p { color: var(--muted); margin-top: 8px; }
 .pad { max-width: 400px; margin: 20px auto 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
 .pad button { padding: 12px 0; border-radius: 10px; background: var(--card); color: var(--text); border: 1px solid #2c2f55; font: inherit; font-size: 1.1rem; cursor: pointer; }
 .pad button:hover { background: var(--accent); }
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 8vw, 3rem);
+  letter-spacing: 2px;
+  text-shadow: 0 0 24px rgba(34, 211, 197, 0.45);
+}
+
+.logo {
+  width: 72px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 18px rgba(124, 92, 255, 0.7));
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 0%, #2a2d6e 0%, transparent 45%),
+    radial-gradient(circle at 80% 100%, #0e4a5a 0%, transparent 40%),
+    var(--bg);
+  background-attachment: fixed;
+}
+
+.card {
+  background: rgba(27, 29, 54, 0.65);
+  backdrop-filter: blur(8px);
+  animation: fadeUp 0.5s ease both;
+}
+.card:nth-child(2) { animation-delay: 0.08s; }
+.card:nth-child(3) { animation-delay: 0.16s; }
+.card:nth-child(4) { animation-delay: 0.24s; }
+.card:nth-child(5) { animation-delay: 0.32s; }
+.card:hover { box-shadow: 0 12px 32px rgba(124, 92, 255, 0.35); }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.icon {
+  display: inline-flex;
+  width: 64px;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(124, 92, 255, 0.35), rgba(34, 211, 197, 0.25));
+}
+
+.btn:not(.btn-ghost) {
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:not(.btn-ghost):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 92, 255, 0.4);
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 8vw, 3rem);
+  letter-spacing: 2px;
+  text-shadow: none;
+  background: linear-gradient(to top, #0ea5b7 0%, #5ef2e2 55%, #e6fffb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 14px rgba(34, 211, 197, 0.55));
+}
+h1 span { color: transparent; }
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  animation: none;
+  filter: drop-shadow(0 0 14px rgba(34, 211, 197, 0.5));
+}
+h1 {
+  background: linear-gradient(to top, #2f3cff 0%, #00a2ff 50%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 0 14px rgba(0, 200, 255, 0.5));
+}
+
+.logo {
+  width: 76px;
+  height: 76px;
+  filter: drop-shadow(0 0 16px rgba(0, 200, 255, 0.5));
+}
+
+.icon {
+  background: rgba(7, 11, 36, 0.7);
+  border: 1px solid rgba(0, 229, 255, 0.35);
+}
+.icon img { width: 40px; height: 40px; }
+.grid { max-width: 980px; }
+
+.card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  aspect-ratio: 4 / 3;
+  backdrop-filter: none;
+}
+.thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s;
+}
+.card:hover .thumb { transform: scale(1.06); }
+
+.info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 14px 18px;
+  background: rgba(7, 11, 36, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(0, 229, 255, 0.3);
+}
+.info h2 { margin: 0 0 2px; font-size: 1.15rem; color: #fff; }
+.info p { margin: 0; font-size: 0.85rem; color: #d6e4ff; }
+
+.card.soon { opacity: 1; }
+.card.soon .thumb { filter: saturate(0.6) brightness(0.85); }

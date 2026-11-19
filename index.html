@@ -3,23 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <title>Mind Arena</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  <h1>Mind<span>Arena</span></h1>
+   <header>
+  <div class="brand">
+    <img class="logo" src="favicon.svg" alt="MindArena logo">
+    <h1>Mind<span>Arena</span></h1>
+  </div>
   <p>Train your brain with fun games.</p>
 </header>
 
 <main class="grid">
-  <a class="card" href="memory.html"><span class="icon">🧩</span><h2>Memory Match</h2><p>Flip cards and find the pairs.</p></a>
-  <a class="card" href="game2048.html"><span class="icon">🔢</span><h2>2048</h2><p>Merge tiles to reach 2048.</p></a>
-  <a class="card" href="sudoku.html"><span class="icon">🧮</span><h2>Sudoku</h2><p>Fill the grid with logic.</p></a>
-  <a class="card soon" href="#"><span class="icon">♟️</span><h2>Chess</h2><p>Coming soon.</p></a>
-  <a class="card soon" href="#"><span class="icon">⚫</span><h2>Go</h2><p>Coming soon.</p></a>
+  <a class="card" href="memory.html">
+    <img class="thumb" src="icons/memory.svg" alt="Memory Match">
+    <div class="info"><h2>Memory Match</h2><p>Flip cards and find the pairs.</p></div>
+  </a>
+  <a class="card" href="game2048.html">
+    <img class="thumb" src="icons/2048.svg" alt="2048">
+    <div class="info"><h2>2048</h2><p>Merge tiles to reach 2048.</p></div>
+  </a>
+  <a class="card" href="sudoku.html">
+    <img class="thumb" src="icons/sudoku.svg" alt="Sudoku">
+    <div class="info"><h2>Sudoku</h2><p>Fill the grid with logic.</p></div>
+  </a>
+  <a class="card soon" href="#">
+    <img class="thumb" src="icons/chess.svg" alt="Chess">
+    <div class="info"><h2>Chess</h2><p>Coming soon.</p></div>
+  </a>
+  <a class="card soon" href="#">
+    <img class="thumb" src="icons/go.svg" alt="Go">
+    <div class="info"><h2>Go</h2><p>Coming soon.</p></div>
+  </a>
 </main>
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
