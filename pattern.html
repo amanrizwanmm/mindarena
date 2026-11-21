@@ -3,29 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattern Memory | MindArena</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <title>2048 | MindArena</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <a class="back" href="index.html">← Back to games</a>
-    <h1>2<span>048</span></h1>
-    <p class="stats">Score: <span id="score">0</span></p>
+    <h1>Pattern <span>Memory</span></h1>
+    <p class="stats">Level: <span id="level">0</span></p>
+    <p id="msg">Press Start to begin.</p>
   </header>
-  <div class="board2048" id="grid"></div>
-  <button class="btn" id="restart">Restart</button>
+
+  <div class="pattern" id="pattern">
+    <button class="pad-btn" aria-label="Cyan"></button>
+    <button class="pad-btn" aria-label="Blue"></button>
+    <button class="pad-btn" aria-label="Purple"></button>
+    <button class="pad-btn" aria-label="Pink"></button>
+  </div>
+  <button class="btn" id="startBtn">Start</button>
 
   <div class="modal" id="modal">
     <div class="modal-box">
-      <div class="trophy">🎮</div>
+      <div class="trophy">🧠</div>
       <h2>Game Over</h2>
-      <p>Your score: <strong id="finalScore">0</strong></p>
+      <p>You reached level <strong id="finalLevel">0</strong>.<br>Best: <strong id="bestLevel">0</strong></p>
       <button class="btn" id="playAgain">Play Again</button>
       <a class="btn btn-ghost" href="index.html">Main Menu</a>
     </div>
   </div>
-  <script src="game2048.js"></script>
+  <script src="pattern.js"></script>
 </body>
 </html>

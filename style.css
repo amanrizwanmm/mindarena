@@ -249,3 +249,12 @@ h1 {
 
 .card.soon { opacity: 1; }
 .card.soon .thumb { filter: saturate(0.6) brightness(0.85); }
+#msg { color: var(--muted); margin-top: 6px; min-height: 1.5em; }
+.pattern { max-width: 340px; margin: 20px auto; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.pad-btn { aspect-ratio: 1; border: none; border-radius: 22px; cursor: pointer; opacity: 0.35; transition: opacity 0.15s, transform 0.15s, box-shadow 0.15s; }
+.pad-btn:nth-child(1) { background: #00e5ff; }
+.pad-btn:nth-child(2) { background: #3a6bff; }
+.pad-btn:nth-child(3) { background: #a855f7; }
+.pad-btn:nth-child(4) { background: #ff4fa3; }
+.pad-btn:hover { opacity: 0.6; }
+.pad-btn.lit { opacity: 1; transform: scale(1.04); box-shadow: 0 0 40px 6px rgba(255, 255, 255, 0.5); }
