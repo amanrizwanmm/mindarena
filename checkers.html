@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkers | MindArena</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="back" href="index.html">← Back to games</a>
+    <h1>Check<span>ers</span></h1>
+    <p class="stats">Turn: <strong id="turn" class="turn-a">Cyan</strong></p>
+  </header>
+
+  <div class="checkers" id="checkers"></div>
+  <button class="btn" id="restart">Restart</button>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="trophy">👑</div>
+      <h2><span id="winner">Cyan</span> wins!</h2>
+      <p>Great game.</p>
+      <button class="btn" id="playAgain">Play Again</button>
+      <a class="btn btn-ghost" href="index.html">Main Menu</a>
+    </div>
+  </div>
+  <script src="checkers.js"></script>
+</body>
+</html>

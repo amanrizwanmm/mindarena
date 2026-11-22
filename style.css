@@ -258,3 +258,16 @@ h1 {
 .pad-btn:nth-child(4) { background: #ff4fa3; }
 .pad-btn:hover { opacity: 0.6; }
 .pad-btn.lit { opacity: 1; transform: scale(1.04); box-shadow: 0 0 40px 6px rgba(255, 255, 255, 0.5); }
+.turn-a { color: #00e5ff; }
+.turn-b { color: #ff4fa3; }
+
+.checkers { max-width: 440px; margin: 20px auto; display: grid; grid-template-columns: repeat(8, 1fr); border: 3px solid var(--accent); border-radius: 10px; overflow: hidden; }
+.sq { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; }
+.sq.light { background: #1d2a6b; }
+.sq.dark { background: #070b24; }
+.sq.dest { cursor: pointer; }
+.sq.dest::after { content: ''; width: 28%; height: 28%; border-radius: 50%; background: rgba(0, 229, 255, 0.75); box-shadow: 0 0 12px #00e5ff; }
+.piece { width: 78%; height: 78%; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: #07102e; cursor: pointer; box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.35), 0 4px 10px rgba(0, 0, 0, 0.5); transition: transform 0.15s; }
+.piece.pa { background: radial-gradient(circle at 35% 30%, #c9ffff, #00c8e6 60%, #0079a8); }
+.piece.pb { background: radial-gradient(circle at 35% 30%, #ffd0ea, #ff4fa3 60%, #b0206b); }
+.piece.sel { transform: scale(1.1); outline: 3px solid #fff; }
