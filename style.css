@@ -271,3 +271,16 @@ h1 {
 .piece.pa { background: radial-gradient(circle at 35% 30%, #c9ffff, #00c8e6 60%, #0079a8); }
 .piece.pb { background: radial-gradient(circle at 35% 30%, #ffd0ea, #ff4fa3 60%, #b0206b); }
 .piece.sel { transform: scale(1.1); outline: 3px solid #fff; }
+.info {
+  top: 0;
+  bottom: auto;
+  padding: 14px 18px 40px;
+  background: linear-gradient(to bottom, rgba(5, 8, 30, 0.85), rgba(5, 8, 30, 0));
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-top: none;
+}
+.info h2,
+.info p { text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7); }
+
+.card.soon .thumb { filter: none; }
