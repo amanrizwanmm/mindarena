@@ -41,8 +41,23 @@ const RULES = {
       'Reach the opponent back row to become a king (♛), which can move and capture backward too.',
       'You win when your opponent has no pieces left or no legal moves.'
     ]
+  },
+  chess: {
+    title: 'Chess',
+    items: [
+      'Two players share the screen. White moves first, then Black.',
+      'Click one of your pieces to see where it can go, then click a glowing dot to move. A pink ring means you can capture.',
+      'Pawns move forward one square (two on their first move) and capture diagonally.',
+      'Rooks move in straight lines. Bishops move diagonally. Queens do both.',
+      'Knights jump in an L shape and can hop over other pieces. Kings move one square in any direction.',
+      'Special moves: castling (king and rook swap places), en passant, and promotion. A pawn that reaches the far end becomes a queen.',
+      'If your king is attacked, you are in check and must escape it.',
+      'Checkmate (no escape from check) wins the game. Stalemate and other draws end it with no winner.',
+      'Use Undo to take back the last move.'
+    ]
   }
 };
+
 
 const gameId = document.body.dataset.game;
 if (RULES[gameId]) {

@@ -8,7 +8,7 @@
     </pattern>
     <g id="pawn"><circle cy="-13" r="8"/><path d="M-10 14Q-7 -2 -4 -5H4Q7 -2 10 14Z"/><rect x="-13" y="14" width="26" height="6" rx="2"/></g>
     <g id="rook"><path d="M-12 -6V-18H-7V-13H-2.5V-18H2.5V-13H7V-18H12V-6Z"/><rect x="-8" y="-6" width="16" height="20"/><rect x="-13" y="14" width="26" height="6" rx="2"/></g>
-    <g id="king"><rect x="-2" y="-24" width="4" height="12"/><rect x="-6" y="-20" width="12" height="4"/><path d="M-11 14Q-13 -6 0 -10Q13 -6 11 14Z"/><rect x="-14" y="14" width="28" height="6" rx="2"/></g>
+    <g id="king"><circle cy="-21" r="4"/><path d="M-9 -12L-9 -17L-4 -13L0 -17L4 -13L9 -17L9 -12Z"/><path d="M-11 14Q-13 -6 0 -10Q13 -6 11 14Z"/><rect x="-14" y="14" width="28" height="6" rx="2"/></g>
   </defs>
   <rect width="400" height="300" fill="url(#bg)"/>
   <circle cx="340" cy="50" r="110" fill="#ffd23f" opacity="0.2"/>
