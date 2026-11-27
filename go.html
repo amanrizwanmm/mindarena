@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Go | MindArena</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-game="go">
+  <header>
+    <a class="back" href="index.html">← Back to games</a>
+    <h1>G<span>o</span></h1>
+    <p class="stats" id="status">Black's turn</p>
+    <p id="captures">Captured: Black 0 · White 0</p>
+  </header>
+
+  <div class="goboard" id="goboard"></div>
+
+  <div class="chess-actions">
+    <button class="btn" id="pass">Pass</button>
+    <button class="btn" id="undo">Undo</button>
+    <button class="btn" id="restart">Restart</button>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="trophy">🏆</div>
+      <h2 id="result">Game over</h2>
+      <p id="details"></p>
+      <button class="btn" id="playAgain">Play Again</button>
+      <a class="btn btn-ghost" href="index.html">Main Menu</a>
+    </div>
+  </div>
+
+  <script src="go.js"></script>
+  <script src="rules.js"></script>
+</body>
+</html>

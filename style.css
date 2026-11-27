@@ -325,3 +325,18 @@ h1 {
 .pc { width: 100%; height: 100%; stroke-width: 1.5; stroke-linejoin: round; overflow: visible; }
 .pc.w { fill: #ffffff; stroke: #222222; color: #222222; }
 .pc.b { fill: #1a1a1a; stroke: #f2f2f2; color: #f2f2f2; }
+#captures { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+
+.goboard { max-width: 440px; margin: 16px auto; padding: 10px; display: grid; grid-template-columns: repeat(9, 1fr); background: #e3b04b; border: 3px solid #6b4513; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); }
+.pt { aspect-ratio: 1; position: relative; cursor: pointer; }
+.pt::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: #6b4513; transform: translateY(-50%); }
+.pt::after { content: ''; position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #6b4513; transform: translateX(-50%); }
+.pt.t::after { top: 50%; }
+.pt.b::after { bottom: 50%; }
+.pt.l::before { left: 50%; }
+.pt.r::before { right: 50%; }
+.hoshi { position: absolute; left: 50%; top: 50%; width: 22%; height: 22%; transform: translate(-50%, -50%); border-radius: 50%; background: #6b4513; z-index: 1; }
+.stone { position: absolute; inset: 7%; border-radius: 50%; z-index: 2; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45); }
+.stone.s1 { background: radial-gradient(circle at 35% 30%, #6b6b8a, #05061a); }
+.stone.s2 { background: radial-gradient(circle at 35% 30%, #ffffff, #c9d3e8); }
+.stone.last::after { content: ''; position: absolute; inset: 36%; border-radius: 50%; background: #ff4fa3; }

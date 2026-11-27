@@ -55,6 +55,21 @@ const RULES = {
       'Checkmate (no escape from check) wins the game. Stalemate and other draws end it with no winner.',
       'Use Undo to take back the last move.'
     ]
+  },
+    go: {
+    title: 'Go',
+    items: [
+      'Two players share the screen. Black plays first, then White.',
+      'On your turn, click an empty intersection to place a stone. Stones never move after that.',
+      'Stones that touch along a line form a group. The empty points next to a group are its liberties.',
+      'If a group loses all its liberties, it is captured and removed from the board.',
+      'You cannot play a stone that would leave your own group with no liberties, unless it captures.',
+      'Ko rule: you cannot immediately recreate the previous position by capturing back a single stone.',
+      'Press Pass if you have no useful move. When both players pass in a row, the game ends.',
+      'Score: your stones plus the empty points only you surround. White gets 6.5 extra points (komi) for moving second.',
+      'Before passing, remove dead stones by playing them out, since the game does not mark them for you.',
+      'The pink dot marks the last stone played. Use Undo to take back a move.'
+    ]
   }
 };
 
